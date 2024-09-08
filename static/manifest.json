@@ -1,0 +1,17 @@
+{
+    "short_name": "Karagandy Library",
+    "name": "Karagandy Library",
+    "start_url": "/",
+    "icons": [
+      {
+        "src": "favicon.png",
+        "type": "image/png"
+      }
+    ],
+    "background_color": "#3367D6",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#3367D6",
+    "shortcuts": [],
+    "description": "Для хакатона"
+}
