@@ -13,10 +13,12 @@
                 <p class="font-medium">Статус билета:&nbsp;</p>
                 <p class="text-green-600">Активный</p>
             </div>
-            <ButtonGroup divClass = "mt-3">
-                <Button href="/profile/edit">Редактировать профиль</Button>
-                <Button href="/logout">Выйти</Button>
-            </ButtonGroup>
+            <form action="/logout" method="post">
+                <ButtonGroup divClass = "mt-3">
+                    <Button href="/profile/edit">Редактировать профиль</Button>
+                    <Button type="submit">Выйти</Button>
+                </ButtonGroup>
+            </form>
         </div>
     </div>
 </section>

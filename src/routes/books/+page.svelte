@@ -5,6 +5,8 @@
 
     let search_input: string = "";
     export let data;
+
+    $: filtered = data.books.filter(book => book.title.includes(search_input) || search_input.includes(book.genre));
 </script>
 
 <section class = "max-w-5xl m-auto mt-16">
@@ -14,13 +16,13 @@
     </div>
 
     <div class="mt-6">
-        <Search placeholder = "Название книги, авторы, жанры" bind:search_input>
+        <Search placeholder = "Название книги, авторы, жанры" bind:value="{search_input}">
             <Button>Поиск</Button>
         </Search>
     </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
-        {#each data.books as book}
+        {#each filtered as book}
             <BookCard book_info = {book}/>
         {/each}
     </div>

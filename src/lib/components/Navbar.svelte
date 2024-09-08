@@ -1,6 +1,5 @@
 <script>
   import { Navbar, NavBrand, NavLi, NavUl, NavHamburger, Button } from 'flowbite-svelte';
-
 </script>
 
 <Navbar let:hidden let:toggle>
@@ -21,7 +20,7 @@
     <NavLi href="/articles">Сообщество</NavLi>
   </NavUl>
   <a href="/login">
-    <Button>Вход</Button>
+    <Button>Аккаунт</Button>
   </a>
   <NavHamburger on:click={toggle} />
 </Navbar>

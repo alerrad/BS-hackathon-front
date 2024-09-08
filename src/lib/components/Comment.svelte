@@ -1,5 +1,6 @@
 <script>
   import { RatingComment } from "flowbite-svelte";
+  export let rating;
   let comment = {
     id: "1",
     user: {
@@ -11,7 +12,7 @@
       joined: "Joined on August 2014",
     },
     total: 5,
-    rating: 5,
+    rating: rating,
     heading: "",
     address: "the UK",
     datetime: "2022-03-25",

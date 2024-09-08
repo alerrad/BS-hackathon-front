@@ -22,12 +22,16 @@
                 <b>Статус:&nbsp;</b>
                 <p>{data.origin}</p>
             </div>
+            <div class="mb-3 flex items-center">
+                <b>В наличии:&nbsp;</b>
+                <p>Да</p>
+            </div>
             <div class="mb-3">
                 <Rating size={32} rating = {Math.floor(Math.random() * 5) + 1}/>
             </div>
             <ButtonGroup>
                 <Button>Оценить книгу</Button>
-                <Button>Скачать книгу</Button>
+                <Button href="/testbook.pdf" download="somebook">Скачать книгу</Button>
             </ButtonGroup>
         </div>
     </div>

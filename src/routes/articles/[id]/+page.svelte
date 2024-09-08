@@ -26,7 +26,7 @@
             <hr>
             <div class="mt-8">
                 {#each comments as comment}
-                    <Comment/>
+                    <Comment rating = {data.average_rating}/>
                 {/each}
             </div>
         </div>

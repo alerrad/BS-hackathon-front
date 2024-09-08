@@ -19,5 +19,18 @@ export const load = (async ({ fetch, params }) => {
         });
     }
 
+    try {
+        const req = await fetch(API_HOST + "/articles/", {
+            method: "GET",
+            mode: "cors",
+        });
+        res.user_articles = await req.json();
+    } catch (err) {
+        console.log(err);
+        throw error(404, {
+            message: "Not found",
+        });
+    }
+
     return res;
 }) satisfies PageServerLoad;
